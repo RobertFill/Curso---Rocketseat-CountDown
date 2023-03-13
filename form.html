@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário</title>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="page2">
+        <header>
+            <nav>
+                <button type="button" class="back">
+                    <a href="./contdown.html" style="text-decoration: none;">Home</a>
+                </button>
+            </nav>
+        </header>
+        <form action="">
+            <fieldset>
+                <br>
+                <div class="box">
+                    <label for="name"><strong>Nome</strong></label>
+                    <input type="text" id="name" name="nome" class="userInput"
+                        style="background-color: white;box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 3);">
+                </div>
+                <br>
+                <div class="box">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" id="email" name="e-mail" class="userInput"
+                        style="background-color: white;box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 3);">
+                </div>
+                <br>
+                <div class="box">
+                    <label for="tel"><strong>Telefone</strong></label>
+                    <input type="tel" id="tel" name="telefone" class="userInput"
+                        style="background-color: white;box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 3);">
+                </div>
+                <br>
+                <div class="box-message">
+                    <label for="message" class="message">Escreva sua mensagem</label>
+                    <br>
+                    <textarea name="message" id="message" cols="90" rows="10" placeholder="mensagem....."
+                        class="userText"></textarea>
+                </div>
+                <br>
+                <button type="submit" onclick="alert('Feito!')" class="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

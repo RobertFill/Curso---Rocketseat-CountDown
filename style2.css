@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    max-width: 1366px;
+    max-height: 771px;
+    background-color: rgb(222, 222, 236);
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+form {
+    top: 10em;
+    text-align: center;
+    position: relative;
+    margin-left: 27rem;
+    box-sizing: border-box;
+    border: none;
+    width: 50%;
+}
+
+fieldset {
+    border: none;
+}
+
+.box {
+    color: var(--purple);
+    padding-left: 4px;
+    width: 100%;
+}
+
+.userInput,
+label {
+    position: relative;
+    display: flex;
+    background: none;
+    outline: none;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+.message {
+    position: relative;
+    top: 3em;
+    right: 26px;
+    color: var(--purple);
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.userText {
+    display: block;
+    padding: 10px 0px 0px 10px;
+    margin-left: 11px;
+    margin-top: 38px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 5);
+    outline: none;
+    transition: 0.3s;
+}
+
+.userText:hover {
+    background-color: rgb(231, 229, 229);
+    transition: 0.2s;
+}
+
+button.back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+button.submit {
+    position: relative;
+    right: 2em;
+    bottom: 0.9em;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--purple);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 3);
+    transition: 0.3s;
+}
+
+button.submit:hover {
+    transition: 0.3s;
+    background-color: #1e1396;
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    color: var(--purple);
+    max-width: 1366px;
+    max-height: 771px;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+.image-top img {
+
+    width: 1366px;
+    height: 133px;
+    left: 0px;
+    top: 0px;
+
+}
+
+h1 {
+    position: relative;
+    width: 486px;
+    height: 54px;
+    right: 300px;
+    top: 30px;
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+
+    letter-spacing: 0.105em;
+    text-transform: uppercase;
+
+    color: var(--purple);
+}
+
+.timer {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 490px;
+    height: 79px;
+    right: 325px;
+    top: 47px;
+    gap: 0.7rem;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 71px;
+    line-height: 108px;
+
+}
+
+.timer div {
+    color: var(--black);
+}
+
+.timer-text {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    width: 25px;
+    height: 21px;
+    left: 265px;
+    top: -20px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+}
+
+p {
+    color: var(--light-grey);
+    margin-left: 30px;
+}
+
+p:nth-child(4) {
+    position: relative;
+    right: 14px;
+}
+
+p:nth-child(1) {
+    position: relative;
+    right: 10px;
+}
+
+
+h4 {
+    position: relative;
+    width: 349px;
+    height: 21px;
+    right: 309px;
+    top: -337px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+button {
+    position: relative;
+    width: 160px;
+    height: 46px;
+    right: 313px;
+    top: -303px;
+
+    background-color: var(--purple);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button a {
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 96px;
+    height: 20px;
+    left: 322px;
+    top: 467px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+button:hover {
+    background-color: #0c084b;
+    transition: 0.7s;
+}
+
+.image-bottom {
+    position: relative;
+    width: 1366px;
+    height: 0px;
+    bottom: 234px;
+
+}
+
+.image-aside {
+    position: relative;
+    width: 607px;
+    height: 435px;
+    left: 320px;
+    bottom: 175px;
+}
