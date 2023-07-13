@@ -15,42 +15,66 @@
         <header>
             <nav>
                 <button type="button" class="back">
-                    <a href="./contdown.html" style="text-decoration: none;">Home</a>
+                    <a href="./contdown.html"><img src="./images/icons8-casa.svg" alt="Home-page" title="Home"></a>
                 </button>
             </nav>
         </header>
-        <form action="">
+        <form action="#" id="form">
             <fieldset>
-                <br>
-                <div class="box">
-                    <label for="name"><strong>Nome</strong></label>
-                    <input type="text" id="name" name="nome" class="userInput"
-                        style="background-color: white;box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 3);">
+
+                <h2>Formulário</h2>
+
+                <div>
+                    <input type="text" class="inputs required" id="inputName" name="nome" placeholder="Digite seu nome" oninput="nameValidadetion()">
+                    <span class="span-required">Nome deve conter no minimo 3 caracteres</span>
                 </div>
                 <br>
-                <div class="box">
-                    <label for="email"><strong>Email</strong></label>
-                    <input type="email" id="email" name="e-mail" class="userInput"
-                        style="background-color: white;box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 3);">
+                <div>
+                    <input type="email" class="inputs required" id="inputEmail" name="e-mail" placeholder="Digite seu E-mail" oninput="emailValidadetion()">
+                    <span class="span-required">Digite um e-mail válido</span>
                 </div>
                 <br>
-                <div class="box">
-                    <label for="tel"><strong>Telefone</strong></label>
-                    <input type="tel" id="tel" name="telefone" class="userInput"
-                        style="background-color: white;box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 3);">
+                <div>
+                    <input type="tel" class="inputs required" id="inputTell" name="telefone" placeholder="telefone (DD) 90000-0000  " oninput="foneValidadetion()">
+                    <span class="span-required">telefone deve conter DDD e - </span>
                 </div>
                 <br>
-                <div class="box-message">
+                <div>
+                    <input type="password" class="inputs required" id="inputPass" name="senha" placeholder="Digite sua senha" oninput="passValidadetion()">
+                    <span class="span-required">Deve conter pelo menos 1 caractere Maiúsculo e 1 número</span>
+                </div>
+                <br>
+                <div>
+                    <input type="password" class="inputs required" id="inputPassReapet" name="senha-comfimação" placeholder="Confirme sua senha" oninput="passRepeatValidadetion()">
+                    <span class="span-required">Repita sua senha</span>
+                </div>
+                <br>
+                <p>Sexo:</p>
+                <div class="selection">
+                    <div>
+                        <input type="radio" name="gender" id="m">
+                        <label for="m">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="f">
+                        <label for="f">Feminino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="o">
+                        <label for="o">Outros</label>
+                    </div>
+                </div>
+                <br>
+                <div>
                     <label for="message" class="message">Escreva sua mensagem</label>
-                    <br>
-                    <textarea name="message" id="message" cols="90" rows="10" placeholder="mensagem....."
-                        class="userText"></textarea>
+                    <textarea name="message" id="inputMessage" cols="90" rows="10" placeholder="mensagem ....."></textarea>
                 </div>
                 <br>
-                <button type="submit" onclick="alert('Feito!')" class="submit">Enviar</button>
+                <button type="submit" class="submit">Enviar</button>
             </fieldset>
         </form>
     </div>
+    <script src="./form.js"></script>
 </body>
 
 </html>

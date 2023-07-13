@@ -4,6 +4,7 @@ const hoursE = document.getElementById('time-hr');
 const minsE = document.getElementById('time-min');
 const secondE = document.getElementById('time-sec');
 
+
 const siteDate = "01 01 2024"; //date custom alterad//
 
 function countDown() {
@@ -30,6 +31,7 @@ function countDown() {
 function formatTime(time) {
     return time < 10 ? `0${time}` : time;
 }
+
 
 countDown();
 
