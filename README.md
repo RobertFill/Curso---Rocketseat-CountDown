@@ -1,2 +1,2 @@
 # Curso---Rocketseat-CountDown
-Projeto Contador do curso da RocketSeat
+## Projeto da RocketSeat Contador e formulário 
