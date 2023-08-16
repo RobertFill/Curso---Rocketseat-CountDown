@@ -11,10 +11,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
-    max-width: 1580px;
-    background-color: rgb(212, 212, 228);
+    max-width: 1600px;
+    
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(212, 212, 228);
+}
+
 
 nav img {
     width: 30px;
@@ -25,16 +29,19 @@ nav img {
     border: none;
 
     font-size: 16px;
+    background-color: transparent;
+    transition: ease .2s;
+}
+.back:hover{
+    scale: 1.2;
 }
 
 form {
-    max-width: 45vw;
-
-    margin: auto;
-    margin-top: 8px;
-
-
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
     line-height: 14px;
+    
 }
 
 fieldset {
