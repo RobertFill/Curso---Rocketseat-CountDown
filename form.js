@@ -14,9 +14,9 @@ form.addEventListener('submit', (e) => {
     foneValidadetion();
     passValidadetion();
     passRepeatValidadetion();
-
-
+    fromComplete()
 })
+
 
 function setErrorName(index) {
     inputs[index].style.border = "2px solid red"
@@ -69,7 +69,20 @@ function passRepeatValidadetion() {
 
         setErrorName(4);
     }
+    
 }
+function fromComplete(){
+    form.innerText ="Concluido!";
+    form.style.width ="500px"
+    form.style.color ="#6C63FF"
+    form.style.fontSize = "50px";
+    form.style.fontWeight = "700";
+    form.style.margin = "320px auto";
+    form.style.borderRadius ="20px"
+    
+
+}
+
 
 
 

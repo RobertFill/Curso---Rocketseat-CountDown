@@ -16,44 +16,44 @@
         <header>
             <nav>
                 <button type="button" class="back">
-                    <a href="./index.html"><img src="./images/icons8-casa.svg" alt="Home-page" title="Home"></a>
+                    <a href="./index.html"><img src="./images/icons8-casa.svg" alt="Home-page" title="página inicial"></a>
                 </button>
             </nav>
         </header>
-        <form action="#" id="form">
+        <form action = "" id="form">
             <fieldset>
 
                 <h2>Formulário</h2>
 
                 <div>
-                    <input type="text" class="inputs required" id="inputName" name="nome" placeholder="Digite seu nome" oninput="nameValidadetion()">
+                    <input type="text" class="inputs required" id="inputName" name="nome" placeholder="Digite seu nome" required oninput="nameValidadetion()">
                     <span class="span-required">Nome deve conter no minimo 3 caracteres</span>
                 </div>
                 <br>
                 <div>
-                    <input type="email" class="inputs required" id="inputEmail" name="e-mail" placeholder="Digite seu E-mail" oninput="emailValidadetion()">
+                    <input type="email" class="inputs required" id="inputEmail" name="e-mail" placeholder="Digite seu E-mail" required oninput="emailValidadetion()">
                     <span class="span-required">Digite um e-mail válido</span>
                 </div>
                 <br>
                 <div>
-                    <input type="tel" class="inputs required" id="inputTell" name="telefone" placeholder="telefone (DD) 90000-0000  " oninput="foneValidadetion()">
+                    <input type="tel" class="inputs required" id="inputTell" name="telefone" placeholder="fone (DD) 90000-0000" required oninput="foneValidadetion()">
                     <span class="span-required">telefone deve conter DDD e - </span>
                 </div>
                 <br>
                 <div>
-                    <input type="password" class="inputs required" id="inputPass" name="senha" placeholder="Digite sua senha" oninput="passValidadetion()">
+                    <input type="password" class="inputs required" id="inputPass" name="senha" placeholder="Digite sua senha" required oninput="passValidadetion()">
                     <span class="span-required">Deve conter pelo menos 1 caractere Maiúsculo e 1 número</span>
                 </div>
                 <br>
                 <div>
-                    <input type="password" class="inputs required" id="inputPassReapet" name="senha-comfimação" placeholder="Confirme sua senha" oninput="passRepeatValidadetion()">
+                    <input type="password" class="inputs required" id="inputPassReapet" name="senha-comfimação" placeholder="Confirme sua senha" required oninput="passRepeatValidadetion()">
                     <span class="span-required">Repita sua senha</span>
                 </div>
                 <br>
                 <p>Sexo:</p>
                 <div class="selection">
                     <div>
-                        <input type="radio" name="gender" id="m">
+                        <input type="radio" required name="gender" id="m">
                         <label for="m">Masculino</label>
                     </div>
                     <div>
@@ -68,7 +68,7 @@
                 <br>
                 <div>
                     <label for="message" class="message">Escreva sua mensagem</label>
-                    <textarea name="message" id="inputMessage" cols="90" rows="10" placeholder="mensagem ....."></textarea>
+                    <textarea name="message" id="inputMessage" cols="90" rows="10" placeholder="mensagem ....."  required></textarea>
                 </div>
                 <br>
                 <button type="submit" class="submit">Enviar</button>
