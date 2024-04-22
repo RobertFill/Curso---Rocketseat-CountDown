@@ -16,11 +16,11 @@
         <header>
             <nav>
                 <button type="button" class="back">
-                    <a href="./index.html"><img src="./images/icons8-casa.svg" alt="Home-page" title="página inicial"></a>
+                    <a href="./index.html"><img src="./images/icon-back.png" alt="Home-page" title="página inicial"></a>
                 </button>
             </nav>
         </header>
-        <form action = "" id="form">
+        <form action = "form.css" method="get" autocomplete="on" id="form">
             <fieldset>
 
                 <h2>Formulário</h2>
@@ -36,7 +36,7 @@
                 </div>
                 <br>
                 <div>
-                    <input type="tel" class="inputs required" id="inputTell" name="telefone" placeholder="fone (DD) 90000-0000" required oninput="foneValidadetion()">
+                    <input type="tel" class="inputs required" id="inputTell" name="telefone" placeholder="fone (DD) 90000-0000" autocomplete="tel" required oninput="foneValidadetion()">
                     <span class="span-required">telefone deve conter DDD e - </span>
                 </div>
                 <br>

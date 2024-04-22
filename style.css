@@ -39,7 +39,12 @@ h1 {
 
     color: var(--purple);
 }
-
+.timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .timer-text {
     display: flex;
     justify-content: space-around;
@@ -64,6 +69,7 @@ h1 {
     font-weight: 400;
     font-size: 71px;
     line-height: 7rem;
+
 }
 .days div{
     color: var(--black);
@@ -76,14 +82,13 @@ h4 {
     line-height: 21px;
 }
 button {
-    text-align: center;
     width: 160px;
     height: 46px;
 
     background-color: var(--purple);
     border-radius: 10px;
     cursor: pointer;
-    margin: 30px 0 0 10.5rem;
+    margin-top: 30px;
 
     transition: ease-in-out .3s;
 }
@@ -98,6 +103,9 @@ button a {
 button:hover{
     background-color: #0c084b; 
 }
+.image-aside img{
+    max-width: 100%;
+}
 .image-aside:hover{
 animation: heart 1s infinite alternate;
 }
@@ -107,3 +115,14 @@ animation: heart 1s infinite alternate;
         scale: 1.1;
     }
 }
+ @media (max-width:1002px) {
+    .page{
+        justify-content: center;
+        padding: 0 2rem 0 2rem;
+        margin-bottom: 150px;
+
+    }
+    .timer{
+        margin-bottom: 60px;
+    }
+ }

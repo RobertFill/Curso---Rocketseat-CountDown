@@ -5,7 +5,7 @@ const minsE = document.getElementById('time-min');
 const secondE = document.getElementById('time-sec');
 
 
-const siteDate = "01 01 2024"; //date custom alterad//
+const siteDate = "01 01 2025"; //date custom alterad//
 
 function countDown() {
 
