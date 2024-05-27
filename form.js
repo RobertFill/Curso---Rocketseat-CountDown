@@ -79,6 +79,7 @@ function fromComplete(){
     form.style.fontWeight = "700";
     form.style.margin = "320px auto";
     form.style.borderRadius ="20px"
+    form.style.textAlign ="center"
     
 
 }

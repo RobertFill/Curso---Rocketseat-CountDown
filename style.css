@@ -10,10 +10,17 @@
     padding: 0;
     font-family: 'Poppins';
     color: var(--purple);
-    max-width: 1600px;
+    transition: all .9s;    
 }
 body{
-    background-color: #FFFFFF;
+    max-width: 1600px;
+    background-color: #ffffff;
+
+    background-image: url(./images/top-image.svg),url(./images/bottom-image.svg);
+    background-position: top center,bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
 .page {
     display: flex;
@@ -21,11 +28,7 @@ body{
     justify-content: space-around;
     align-items: center;
     height: 100vh;
-
-    background-image: url(./images/top-image.svg),url(./images/bottom-image.svg);
-    background-position: top center,bottom center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    
 }
 h1 {
     font-style: normal;
@@ -58,7 +61,7 @@ h1 {
 }
 .timer-text p {
     color: var(--light-grey);
-    margin-left: 30px;
+    margin-left: 47px;
 }
 
 .days{
@@ -116,13 +119,76 @@ animation: heart 1s infinite alternate;
     }
 }
  @media (max-width:1002px) {
+
+    body{
+        background-size: 270%;
+
+    }
+
     .page{
         justify-content: center;
-        padding: 0 2rem 0 2rem;
-        margin-bottom: 150px;
-
+        padding: 0 4rem 0 4rem;
+        
     }
     .timer{
         margin-bottom: 60px;
     }
  }
+ @media (max-width:555px){
+
+    h1 {
+        font-size: 27px;
+    }
+    .days{
+        font-size: 55px;
+        line-height: 5.2rem;
+    }
+    .timer-text {
+        font-size: 11px;
+        
+    }
+    .timer-text p{
+        margin-left: 2pc
+    }
+ }
+ @media (max-width:430px){
+
+    .page{   
+        padding: 0;
+        
+        
+    }
+    h1 {
+        font-size: 29px;
+    }
+    .days{
+        font-size: 69px;
+    }
+    .timer-text {
+        font-size: 14px;
+        
+    }
+    .timer-text p{
+        margin-left: 3pc
+    }
+    h4{
+        font-size: 13px;
+    }
+
+ }
+ @media (max-width:380px){
+    .days{
+        font-size: 63px;
+    }
+    .timer-text p{
+        margin-left: 2.4pc
+    }
+ }
+ @media (max-width:1920px) {
+    body{
+        max-width: 1920px;
+        width: 100%;
+        margin: auto;
+    }
+
+}

@@ -11,73 +11,47 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
-    max-width: 1600px;
     box-sizing: border-box;
 }
 body{
+    max-width: 1600px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
     background: url(./images/top-image.svg), url(./images/bottom-image.svg);
     background-repeat: no-repeat;
     background-position: top center, bottom center;
     background-size: contain;
-}
-.page2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 1rem 0 1rem;
+    background-color: var(--text-color);
 
-}
-
-
-nav img {
-    width: 30px;
-}
-
-.back {
-    /* back page button*/
     
-    margin: 14px 0 0 40px;
-    border: none;
-    padding: 4px;
-    border-radius: 5px;
-
-    font-size: 5px;
-    background-color: transparent;
-    transition: ease .2s;
+    
 }
-.back:hover{ 
-    scale: 1.2;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    line-height: 14px;
+h1{
+    margin-bottom: 22px;
     
 }
 
 fieldset {
-    
-    padding: 19px 25px 25px 25px;
-    border-radius: 10px;
-    border: none;
+    padding: 20px 0 20px 0;
+    width: 600px;
     color: var(--purple);
-    background-color: var(--text-color);
+   
 
-}
+    border: none;
+    border-radius: 10px;
 
-h2 {
     text-align: center;
-    margin-bottom: 25px;
 
-
-
-
+    line-height: 15px;
 }
+
 
 .inputs {
-    width: 100%;
+    width: 90%;
     height: 35px;
     padding-left: 14px;
 
@@ -93,10 +67,9 @@ h2 {
 }
 
 p {
-    margin-left: 5px;
     font-weight: 500;
 
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .selection {
@@ -111,25 +84,22 @@ p {
     margin: 12px 0 0 10px;
 }
 
-.message {
-    display: flex;
-}
-
 span {
+    text-align: start;
+    padding-left: 36px;
     display: none;
     font-size: 12px;
     color: red;
+    
 
 }
 
-.message {
-    justify-content: center;
-    margin-top: 30px;
-}
+
 
 textarea {
+    max-width: 100%;
     padding: 15px 0 0 15px;
-    margin-top: 10px;
+    margin-top: 5px;
     background-color: aliceblue;
     outline: none;
     border-radius: 4px;
@@ -137,13 +107,11 @@ textarea {
 
 }
 
-.submit {
-    position: relative;
-    left: 225px;
-    width: 150px;
-    height: 30px;
+button {
+    width: 100px;
+    height: 40px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: var(--purple);
     color: aliceblue;
 
@@ -155,4 +123,42 @@ textarea {
 
 .submit:hover {
     background-color: #38355f;
+}
+@media (max-width:600px){
+
+    fieldset{
+        width: 400px;
+        padding: 20px;
+    }
+    .inputs{
+        width: 100%;
+        height: 30px;
+    }
+    textarea{
+        width: 400px;
+    }
+    span {
+        padding-left: 3px;  
+    
+    }
+}
+@media (max-width:430px){
+
+    .inputs{
+        width: 97%;
+    }
+    textarea{
+        width: 360px;
+    }
+    span {
+        padding-left: 8px;  
+    
+    }
+}
+
+@media (max-width:1920px) {
+    body{
+        max-width: 1920px;
+
+    }
 }
